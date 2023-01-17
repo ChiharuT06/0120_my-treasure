@@ -1,3 +1,14 @@
+<?php
+
+$name=$_POST['name'];
+
+
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +20,10 @@
     <title>Animate Javascript</title>
 </head>
 <body>
+
+       <h1>受信ページ</h1>
+        <p>名前：<?php echo $name ?>さん</p>
+    
 
     <div class="container">
         <h2>Animate Javascript</h2>
@@ -34,6 +49,7 @@
           scale:function(){
             return anime.random(1,3);/*1～3の大きさで描写*/
           },
+          duration:2500,
 
         });
       }
